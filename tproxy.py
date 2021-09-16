@@ -78,7 +78,7 @@ class MainWindow(QWidget):
 
     def load_ui(self):
         loader = QUiLoader()
-        path = os.fspath("mainwindow.ui")
+        path = os.fspath("ui/mainwindow.ui")
         ui_file = QFile(path)
         ui_file.open(QFile.ReadOnly)
         self.windo_mainwindow = loader.load(ui_file, self)
@@ -108,7 +108,7 @@ class MainWindow(QWidget):
 
     def load_ui_addnode(self):
         loader = QUiLoader()
-        path = os.fspath("addnode.ui")
+        path = os.fspath("ui/addnode.ui")
         ui_file = QFile(path)
         ui_file.open(QFile.ReadOnly)
         self.window_addnode = loader.load(ui_file, self)
@@ -190,12 +190,6 @@ class MainWindow(QWidget):
             self.windo_mainwindow.textEdit_log.append(f"[*] Connectivity check status: {result.status_code}")
         except:
             self.windo_mainwindow.textEdit_log.append(f"[*] Connectivity check status: not connected")
-
-
-
-
-
-
 
 
 if __name__ == "__main__":
