@@ -130,3 +130,5 @@ dmypy.json
 
 # TProxy files
 nodes.dat
+main.pyproject
+main.pyproject.user
